@@ -95,7 +95,7 @@ app.delete('/listings/:id',async (req,res)=>{
 //     res.send('successful testing');
 // })
 app.get('/',(req,res)=>{
-    res.send('hi i am the root');
+    res.redirect('/listings');
 })
 app.listen(8080,()=>{
     console.log('server is listening to the port 8080');
